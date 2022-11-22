@@ -1,4 +1,0 @@
-[submodule "__erpm__/general-apps"]
-	path = __erpm__/general-apps
-	url = git@gitlab.com:erpm-odoo-apps/general-apps.git
-	branch = 16.0
