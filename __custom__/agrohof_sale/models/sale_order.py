@@ -6,9 +6,9 @@ from odoo import models, fields, api, _
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    @api.model
-    def create(self, vals):
-        rec = super(SaleOrder, self).create(vals)
-        if rec and not rec.analytic_account_id:
-            rec._create_analytic_account()
-        return rec
+    @api.model_create_multi
+    def create(self, vals_list):
+        new_recs = super(SaleOrder, self).create(vals_list)
+        no_analytic_recs = new_recs.filtered(lambda n: not n.analytic_account_id)
+        no_analytic_recs._create_analytic_account()
+        return new_recs

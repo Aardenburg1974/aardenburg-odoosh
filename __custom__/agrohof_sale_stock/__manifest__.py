@@ -1,14 +1,14 @@
 # Copyright© 2022 ERP.M <http://www.erp-m.eu>
 {
-    "name": "Agrohof Sale",
+    "name": "Agrohof Sale Stock",
     "version": "16.0.1.0.3",
     "category": "Sale",
-    "summary": "Agrohof Sale Changes",
+    "summary": "Agrohof Sale Stock Changes",
     "author": "ERP.M",
     "license": "OPL-1",
     "website": "http://www.erp-m.eu",
     "support": "info@erp-m.eu",
-    "depends": ["sale_management", "agrohof_base"],
+    "depends": ["agrohof_sale", "sale_stock"],
     "data": [
     ],
     "installable": True,
