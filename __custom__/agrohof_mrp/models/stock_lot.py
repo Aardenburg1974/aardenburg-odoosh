@@ -34,12 +34,12 @@ class StockLot(models.Model):
 
     @api.model
     def _get_next_serial(self, company, product):
-        if product.tracking == "serial" and product.default_code and product.agro_analytic_plan_id:
+        if product.tracking == "serial" and product.barcode and product.agro_analytic_plan_id:
             last_serial = self.env['stock.lot'].search(
-                [('company_id', '=', company.id), ('name', 'like', product.default_code)],
+                [('company_id', '=', company.id), ('name', 'like', product.barcode)],
                 limit=1, order='name DESC')
             if last_serial:
-                return self.env['stock.lot'].generate_lot_names(last_serial.name, 3)[1]
+                return self.env['stock.lot'].generate_lot_names(last_serial.name, 4)[1]
             else:
-                return "%s001" % product.default_code
+                return "%s 0001" % product.barcode
         return super(StockLot, self)._get_next_serial(company, product)
