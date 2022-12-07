@@ -3,8 +3,8 @@
 from odoo import models, fields, api, _
 
 
-class MrpProduction(models.Model):
-    _inherit = "mrp.production"
+class SaleOrder(models.Model):
+    _inherit = "sale.order"
 
     @api.model
     def create(self, vals):
