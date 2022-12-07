@@ -1,7 +1,7 @@
 # Copyright© 2022 ERP.M <http://www.erp-m.eu>
 {
     "name": "Agrohof MRP",
-    "version": "16.0.1.0.1",
+    "version": "16.0.1.0.2",
     "category": "Production",
     "summary": "Agrohof Production Changes",
     "author": "ERP.M",
