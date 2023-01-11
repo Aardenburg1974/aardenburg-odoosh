@@ -1,0 +1,28 @@
+[submodule "__oca__/sale-workflow"]
+	path = __oca__/sale-workflow
+	url = https://github.com/OCA/sale-workflow.git
+	branch = 16.0
+[submodule "__oca__/server-tools"]
+	path = __oca__/server-tools
+	url = https://github.com/OCA/server-tools.git
+	branch = 16.0
+[submodule "__oca__/server-ux"]
+	path = __oca__/server-ux
+	url = https://github.com/OCA/server-ux.git
+	branch = 16.0
+[submodule "__oca__/server-backend"]
+	path = __oca__/server-backend
+	url = https://github.com/OCA/server-backend.git
+	branch = 16.0
+[submodule "__oca__/partner-contact"]
+	path = __oca__/partner-contact
+	url = https://github.com/OCA/partner-contact.git
+	branch = 16.0
+[submodule "__oca__/l10n-netherlands"]
+	path = __oca__/l10n-netherlands
+	url = https://github.com/OCA/l10n-netherlands.git
+	branch = 16.0
+[submodule "__oca__/product-attribute"]
+	path = __oca__/product-attribute
+	url = https://github.com/OCA/product-attribute.git
+	branch = 16.0
